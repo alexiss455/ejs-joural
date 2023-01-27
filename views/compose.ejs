@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<div class="pose section">
+    <h1>YOU POST ABOUT YOUR DAY</h1>
+
+   <form action="/compose" method="post" class="form-grid">
+    <label>Title</label>
+    <input  class="input-text" name="inputPose" placeholder="Enter pose">
+    <label>Post</label>
+    <textarea name="text" id="" cols="30" rows="10"></textarea>
+    
+    <div>
+        <button class="btn">post</button>
+    </div>
+
+   </form>
+</div>
+
+<%- include('partials/footer'); -%>

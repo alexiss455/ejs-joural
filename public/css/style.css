@@ -1,0 +1,127 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+body{
+    background-color: rgba(255, 255, 255, 0.644);
+    font-family: sans-serif;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(216, 216, 216);
+}
+header{
+    min-height: 100%;
+    background-color: rgba(36, 27, 27, 0.678);
+}
+.head-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    box-shadow: 1px 1px 6px #888888;
+}
+.section{
+   padding: 0 2rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+footer{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(36, 27, 27, 0.678);
+    height: 90px;
+    bottom: 0;
+    width: 100%;
+}
+.link a{
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: relative;
+}
+.link a:hover{
+    color: rgba(240, 240, 240, 0.836);
+}
+
+.link a::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    transition: .4s;
+}
+.link a:hover:after{
+    width: 100%;
+    left: 0;
+}
+.pose{
+    text-align: center;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 60%;
+    text-align: initial;
+    justify-content: center;
+}
+
+label{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn{
+    margin-top: .7rem;
+    outline: none;
+    padding: .4rem 1rem;
+    background-color: rgb(233, 241, 241);
+    box-shadow: 1px 1px 6px #888888;
+    border: none;
+    border-radius: .2rem;
+}
+
+.btn:hover{
+    background-color: #888888;
+}
+
+textarea{
+    resize: none;
+    font-size: 1rem;
+}
+
+.input-text{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.content{
+    margin-top: 4rem;
+}
+
+.content h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
