@@ -1,12 +1,11 @@
     <%- include('partials/header'); -%>
         <div class="content section">
             <h1>Home</h1>
-            <p><%= startingContent%></p>
+            <p><%= startingContent %></p>
             <% postsEJS.forEach(function(param){ %>
            <h1><%= param.title %></h1> 
            <p><%= param.posted.substring(0, 100)%>
-            <a href="/posts/<%= param.title%>">Read More</a>
-           ....
+            <a href="/posts/<%= param.title%>">Read More</a>...
         </p>
            <% }) %>
         </div>
